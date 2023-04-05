@@ -1,12 +1,12 @@
 import React from "react";
-import UserNav from "../components/UserNav.js";
 import { useGlobalContext } from "../context.js";
+import Nav from "../components/Nav.js";
 const UserPage = () => {
   const { loggedInUser } = useGlobalContext();
 
   return (
     <>
-      <UserNav />
+      <Nav />
       <div className="user-cont">
         <div className="user-info-cont">
           <h1>{`Hello There, ${loggedInUser.name.toUpperCase()}`}</h1>
